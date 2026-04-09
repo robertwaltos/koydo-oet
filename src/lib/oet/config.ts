@@ -1,0 +1,45 @@
+// OET Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM016",
+  slug: "oet",
+  name: "OET",
+  fullName: "Occupational English Test",
+  alias: "Occupational English Test",
+  family: "OET",
+  category: "Language proficiency",
+  subcategory: "Healthcare English",
+  country: "Global",
+  region: "Global",
+  languages: ["English"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "Year-round",
+  schedulePattern: "Frequent sessions",
+  ageGroup: "20-45",
+  targetUser: "Healthcare professional",
+  delivery: "Paper/computer",
+  questionTypes: ["Listening","reading","writing","speaking"],
+  adaptivity: "Linear",
+  sections: "4 skills profession context",
+  scoringMode: "Grades",
+  essayOrSpeaking: "Speaking + writing",
+  ipRisk: "High",
+  contentReuse: "language_healthcare",
+  uiEngine: "4skills_professional_context",
+  monetizationPotential: "High",
+  tier: "Tier 2",
+  launchWave: "Wave 4",
+  themeColor: "#059669",
+  themeColorDark: "#047857",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
